@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Bienvenido</title>
+		<link rel="stylesheet" href="/css/base.css">
+		<link rel="stylesheet" href="/css/index.css">
+		<link rel="stylesheet" href="/css/login.css">
+	</head>
+	<body>
+		<section class="prompt">
+			<h1>Registrate</h1>
+			<hr>
+			<form action="/auth/signup" method="post">
+				<section>
+					<label for="username">Usuario</label>
+					<input id="username" name="username" type="text" autocomplete="username" required>
+				</section>
+				<section>
+					<label for="new-password">Contraseña</label>
+					<input id="new-password" name="password" type="password" autocomplete="new-password" required>
+				</section>
+				<button type="submit">Registro</button>
+			</form>
+			<p class="help">Tienes una cuenta? <a href="/auth/login">Ingresa</a></p>
+		</section>		
+	</body>
+</html>

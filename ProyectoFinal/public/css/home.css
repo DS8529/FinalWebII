@@ -1,0 +1,73 @@
+/* Reset para asegurar consistencia */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Estilado general */
+body {
+	font-family: 'Verdana', sans-serif;
+	background: linear-gradient(45deg, #f8d7e3, #e1e8ff);
+	color: #444;
+}
+
+/* Contenedor Principal Home */
+.todohome {
+	margin: 100px 0 30px 0;
+	position: relative;
+}
+
+/* Título principal con tipografía grande y centrada */
+.todohome h1 {
+	position: absolute;
+	top: -120px;
+	width: 100%;
+	font-size: 90px;
+	font-weight: 300;
+	text-align: center;
+	color: #c85c5c;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Sección principal con espaciado y centrado */
+.todohome section {
+	padding-top: 20px;
+	text-align: center;
+}
+
+/* Subtítulo con detalles más sutiles */
+.todohome h2 {
+	padding-bottom: 40px;
+	font-size: 30px;
+	font-weight: 300;
+	color: #9c3b7e;
+	text-transform: capitalize;
+}
+
+/* Botón principal con un diseño moderno y transiciones */
+.todohome .button {
+	padding: 14px 50px;
+	font-size: 18px;
+	font-weight: 600;
+	color: white;
+	border-radius: 30px;
+	background: linear-gradient(to left, #f06292, #f8bbd0);
+	transition: background 0.4s ease, transform 0.3s ease, box-shadow 0.3s ease;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Interactividad para el botón en hover */
+.todohome .button:hover {
+	background: linear-gradient(to left, #f48fb1, #f9c0d5);
+	transform: scale(1.05);
+	box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Enlace sin subrayado para el botón */
+.todohome a.button {
+	text-decoration: none;
+	color: white;
+}

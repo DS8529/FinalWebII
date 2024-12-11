@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impresoras</title>
+</head>
+<body>
+    <h1><%= message %></h1>
+    <h2>Cart Contents:</h2>
+    <ul>
+        <% const cartEntries = Object.entries(cart); %>
+        <% if (cartEntries.length > 0) { %>
+            <% cartEntries.forEach(([productId, quantity]) => { %>
+                <li>Product ID: <%= productId %> | Quantity: <%= quantity %></li>
+            <% }) %>
+        <% } else { %>
+            <li>Tu carrito es:</li>
+        <% } %>
+    </ul>
+    <form action="/cart/add" method="POST">
+        <label for="productId">Añadir producto ID:</label>
+        <input type="text" name="productId" required>
+        <button type="submit">Añadir</button>
+    </form>
+</body>
+</html>
